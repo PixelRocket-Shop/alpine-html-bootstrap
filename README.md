@@ -1,7 +1,7 @@
 # Alpine - Bootstrap 5 HTML Responsive Ecommerce Template
 
 ## Overview
-For the fashion focused online store, Alpine is a responsive Bootstrap 5 Ecommerce template. The template uses a "Ken Burns" effect on the homepage slideshow and angled banners. Large product images on category pages give you ample room for showcasing products while simultaneously providing easy navigation throughout the website. It's the perfect starting point for any fashion retail website, and the template's clean and minimal design means it's easy to modify and painless to integrate with your custom Ecommerce application. And above all, it's free.
+For the fashion focused online store, Alpine is a responsive Bootstrap 5 Ecommerce template with a "Ken Burns" effect on the homepage slideshow and angled banners. Large product images on category pages give you ample room for showcasing products while simultaneously providing easy navigation throughout the website. It's the perfect starting point for any fashion retail website, and the template's clean and minimal design means it's easy to modify and painless to integrate with your custom Ecommerce application. And above all, it's free.
 
 <strong><a href="https://alpine-html-bootstrap.vercel.app/">View Demo</a> | <a href="https://github.com/PixelRocket-Shop/alpine-html-bootstrap/archive/main.zip">Download ZIP</a></strong>
 
