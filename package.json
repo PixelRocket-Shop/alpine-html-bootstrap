@@ -1,7 +1,7 @@
 {
-    "name": "camper",
+    "name": "alpine",
     "version": "1.0.0",
-    "description": "Premium HTML Template created by Pixel Rocket",
+    "description": "Bootstrap 5 HTML Template created by Pixel Rocket",
     "scripts": {
         "start": "webpack-dev-server --open",
         "build": "del-cli dist && webpack -p",
