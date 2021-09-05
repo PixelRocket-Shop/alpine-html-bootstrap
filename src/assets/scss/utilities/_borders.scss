@@ -1,0 +1,39 @@
+.border-top-white-opacity {
+    border-top: 1px solid rgba(255,255,255, .15);
+}
+.border-bottom-white-opacity {
+    border-bottom: 1px solid rgba(255,255,255, .15);
+}
+.border-white-opacity {
+    border: 1px solid rgba(255,255,255, .15);   
+}
+
+
+/* larger rounded radius */
+.rounded-lg {
+    border-radius: $border-radius-lg !important;
+}
+.rounded-xl {
+    border-radius: $border-radius-xl !important;
+}
+
+/* Remove Border radius per corner */
+.rounded-0-top-start {
+    border-top-left-radius: 0 !important;
+}
+.rounded-0-bottom-start {
+    border-bottom-left-radius: 0 !important;
+}
+.rounded-0-top-end {
+    border-top-right-radius: 0 !important;
+}
+.rounded-0-bottom-end {
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Cannot get Bootstrap API utility to generate responsive borders by breakpoint. Temp fix */
+@include media-breakpoint-up(lg) { 
+    .border-lg-bottom {
+        border-bottom: 1px solid $border-color;
+    }
+}

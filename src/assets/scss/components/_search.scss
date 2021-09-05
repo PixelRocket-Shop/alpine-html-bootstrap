@@ -1,0 +1,25 @@
+.search-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: auto;
+    background: $white;
+    display: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.search-active {
+    overflow: hidden;
+    
+    .search-overlay {
+        display: block;
+        animation: fadeIn .5s;
+        opacity: 1;
+        z-index: 999;
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "entries": [
+        {
+            "label-top": "UK",
+            "label-bottom": "6",
+            "value": "6"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "6.5",
+            "value": "6.5",
+            "disabled": true
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "7",
+            "value": "7"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "7.5",
+            "value": "7.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "8",
+            "disabled": true,
+            "value": "8"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "8.5",
+            "value": "8.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "9",
+            "value": "9"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "9.5",
+            "value": "9.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "10",
+            "value": "10.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "11",
+            "value": "11"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "11.5",
+            "value": "11.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "12",
+            "value": "12"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "12.5",
+            "value": "12.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "13",
+            "value": "13.5"
+        },
+        {
+            "label-top": "UK",
+            "label-bottom": "14",
+            "value": "14"
+        }
+    ]
+}

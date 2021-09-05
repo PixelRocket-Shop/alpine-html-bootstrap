@@ -1,0 +1,30 @@
+.card-title-overlay-skewed {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: skewY(-5deg);
+}
+
+.card-skewed-overlap {
+    margin-top: -5px;
+    font-weight: bold;
+    font-size: 74%;
+    text-transform: uppercase;
+    background: $teal;
+    color: $body-color;
+    padding: .25rem .45rem;
+}
+
+.card-skewed-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: $gray-900;
+    color: $white;
+    padding: .5rem .75rem;
+}

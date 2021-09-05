@@ -1,0 +1,39 @@
+.card-hover-hide-one {
+    transition: all ease-in .3s;
+}
+
+.card-hover-hide-two {
+    transition: all ease-in .3s .1s;
+}
+
+.card-hover-hide-three {
+    transition: all ease-in .3s .2s;
+}
+
+.card-hover-show-one {
+    transition: all ease-in .2s !important;
+    transform: translate(-50%, -35%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+}
+
+.card:hover {
+    .card-hover-hide-one {
+        transform: translateX(-200%);
+    }
+    
+    .card-hover-hide-two {
+        transform: translateX(-200%);
+    }
+    
+    .card-hover-hide-three {
+        transform: translateX(-200%);
+    }
+    .card-hover-show-one {
+        transition: all ease-in .2s .5s !important;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,47 @@
+/* Mixin button faded */
+@mixin btn-variant-faded($bg, $color) {
+    background-color: $bg;
+    color: $color;
+  
+    &:hover, &:focus {
+      background-color: fade-in($bg, .05);
+      color: $color;
+    }
+  
+    &.active {
+      background-color: fade-in($bg, .05);
+      color: $color;
+    }
+}
+
+
+
+/* Mixin Buttons Chunky */
+@mixin btn-chunky($color) {
+    box-shadow: $btn-chunky-box-shadow darken($color, 12.5%);
+    padding-bottom: calc(#{$btn-padding-y} - .25rem);
+    border-color: transparent;
+    
+   @include transition($btn-transition);
+
+   &:hover {
+      background: darken($color, 5%);
+      border-color: transparent;
+      box-shadow: $btn-chunky-box-shadow darken($color, 12.5%);     
+   }
+  
+    &:active,
+    &:focus {
+        outline: 0 !important;
+        box-shadow: $btn-chunky-box-shadow darken($color, 25%) !important;
+    }
+
+    &.btn-lg {
+      padding-bottom: calc(#{$btn-padding-y-lg} - .25rem);
+    }
+
+    &.btn-sm {
+      padding-bottom: calc(#{$btn-padding-y-sm} - .25rem);
+    }
+  
+  }

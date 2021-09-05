@@ -1,0 +1,38 @@
+/* tooltip gray styling */
+.tooltip-gray {
+    .tooltip-inner {
+        background: $gray-600;
+        color: $body-color;
+    }
+
+    .tooltip-arrow {
+        &:before {
+            border-top-color: $gray-600;
+        }
+    }
+
+    &.bs-tooltip-end {
+        .tooltip-arrow {
+            &:before {
+                border-top-color: transparent;
+                border-right-color: $gray-600;
+            }
+        }        
+    }
+    &.bs-tooltip-start {
+        .tooltip-arrow {
+            &:before {
+                border-top-color: transparent;
+                border-left-color: $gray-600;
+            }
+        }        
+    }
+    &.bs-tooltip-bottom {
+        .tooltip-arrow {
+            &:before {
+                border-top-color: transparent;
+                border-bottom-color: $gray-600;
+            }
+        }        
+    }        
+}

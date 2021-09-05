@@ -1,0 +1,58 @@
+:root {
+    /* Bootstrap vars */
+    --bs-font-sans-serif: 'Barlow', sans-serif;
+    --bs-spacer: #{$spacer};
+    --bs-gutter-width: #{$grid-gutter-width};
+
+    /* Theme vars */
+    --theme-font-headings: 'Barlow', sans-serif;
+
+    /* Icon font family */
+    --theme-font-icon: 'remixicon';
+    --theme-font-icon-style: 'normal';
+
+    /* Custom checkbox styles */
+    --theme-form-checkbox-before-size: 20px;
+    --theme-form-checkbox-bg-before-size: 28px;
+    --theme-form-checkbox-after-width: 6px;
+    --theme-form-checkbox-after-height: 12px;
+    --theme-form-checkbox-border-radius: 2px;
+    --theme-form-checkbox-after-position-left: 7px;
+    --theme-form-checkbox-after-position-top: 4px;
+    --theme-form-checkbox-bg-after-position-left: 11px;
+    --theme-form-checkbox-bg-after-position-top: 7px;
+    --theme-form-checkbox-after-border-width: 2px;
+    --theme-form-checkbox-active-color: #{$dark};
+    --theme-form-radio-button-after-size: 10px;
+    --theme-form-radio-button-after-position-left: 5px;
+    --theme-form-radio-button-after-position-top: 6px;
+    
+    --theme-form-radio-button-border-radius: 100%;
+
+    /* theme breakpoints using Bootstrap sass map */
+    @each $breakpoint, $value in $grid-breakpoints {
+        --theme-breakpoint-#{$breakpoint}: #{$value};
+    }
+
+    /* theme max widths using sass map */
+    @each $breakpoint, $value in $container-max-widths {
+        --theme-maxwidth-breakpoint-#{$breakpoint}: #{$value};
+    }
+
+    /* Listing Page */
+    --theme-listing-page-sidebar-hide-filter-margin: -16.66667%;
+
+    /* Listing page psuedo hover element height. This is amended with JS */
+    --theme-listing-page-card-pseudo-hover-height: 100%;
+
+    /* Swiper overrides */
+    --swiper-pagination-color: #{$gray-900};
+    --swiper-timeline-fixed-height: 700px;
+
+    /* Swiper spacing, used in card-expand */
+    --swiper-slide-spacing: 25px;
+
+    /* Custom translate styles */
+    --theme-translate-X: 0;
+    --theme-translate-Y: 0;
+}

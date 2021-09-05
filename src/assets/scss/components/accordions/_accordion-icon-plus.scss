@@ -1,0 +1,10 @@
+/* Accordion icon plus/minus styling */
+.accordion-icon-plus {
+    &:after {
+        content: "\EA11";
+    }
+}
+
+.accordion-icon-plus:not(.collapsed)::after {
+    content: "\EE57";
+}

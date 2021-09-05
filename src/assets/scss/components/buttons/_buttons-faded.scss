@@ -1,0 +1,7 @@
+/* faded button */
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color}-faded {
+        @include btn-variant-faded(rgba($value, $btn-faded-bg-opacity), $value);
+    }
+}

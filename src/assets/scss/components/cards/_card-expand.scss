@@ -1,0 +1,26 @@
+/* card expand */
+.card-expand {
+    padding-left: var(--bs-gutter-width);
+    padding-right: var(--bs-gutter-width);
+}
+
+/* handle width calc for smaller devices */
+@include media-breakpoint-up(md) { 
+    .card-expand {
+        width: auto;
+    }
+}
+@include media-breakpoint-up(xl) { 
+    .card-expand {
+        width: calc(50vw + (var(--theme-maxwidth-breakpoint-xl) / 2) - (var(--bs-spacer) * 2));
+        margin-left: auto;
+        margin-right: 0;
+        padding-right: var(--swiper-slide-spacing);
+        padding-left: 0;
+    }
+}
+@include media-breakpoint-up(xxl) { 
+    .card-expand {
+        width: calc(50vw + (var(--theme-maxwidth-breakpoint-xxl) / 2) - (var(--bs-spacer) * 2));
+    }
+}

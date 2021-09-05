@@ -1,0 +1,119 @@
+<!-- Category Aside -->
+<aside>
+
+    {{#if (config filters-one.categories) }}
+        <!-- Filter Category -->
+        <div class="mb-4">
+            <h2 class="mb-4 fs-6 mt-2 fw-bolder">Jacket Category</h2>
+            <nav>
+                <ul class="list-unstyled list-default-text">
+                    {{#each filters-one.categories }}
+                        {{> filters/filter-text this }}
+                    {{/each}}
+                </ul>
+            </nav>
+        </div>
+        <!-- / Filter Category-->
+    {{/if}}
+
+    <!-- Price Filter -->
+    <div class="py-4 widget-filter widget-filter-price border-top">
+        <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+            data-bs-toggle="collapse" href="#filter-price" role="button" aria-expanded="true"
+            aria-controls="filter-price">
+            Price
+        </a>
+        <div id="filter-price" class="collapse show">
+            {{> filters/filter-price }}
+        </div>
+    </div>
+    <!-- / Price Filter -->    
+
+    {{#if (config filters-one.brands) }}
+        <!-- Brands Filter -->
+        <div class="py-4 widget-filter border-top">
+            <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-brands" role="button" aria-expanded="true"
+                aria-controls="filter-brands">
+                Brands
+            </a>
+            <div id="filter-brands" class="collapse show">
+                <div class="input-group my-3 py-1">
+                    <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search" aria-label="Search">
+                    <span class="input-group-text bg-transparent px-2 position-absolute top-7 end-0 border-0 z-index-20"><i class="ri-search-2-line text-muted"></i></span>
+                </div>
+                <div class="simplebar-wrapper">
+                    <div class="filter-options" data-pixr-simplebar>
+                        {{#each filters-one.brands }}
+                            {{> filters/filter-checkbox this type="brand" }}
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- / Brands Filter -->
+    {{/if}} 
+
+    {{#if (config filters-one.type) }}
+        <!-- Type Filter -->
+        <div class="py-4 widget-filter border-top">
+            <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-type" role="button" aria-expanded="true"
+                aria-controls="filter-type">
+                Type
+            </a>
+            <div id="filter-type" class="collapse show">
+                <div class="input-group my-3 py-1">
+                    <input type="text" class="form-control py-2 filter-search rounded" placeholder="Search" aria-label="Search">
+                    <span class="input-group-text bg-transparent px-2 position-absolute top-7 end-0 border-0 z-index-20"><i class="ri-search-2-line text-muted"></i></span>
+                </div>
+                <div class="filter-options">
+                    {{#each filters-one.type }}
+                        {{> filters/filter-checkbox this type="type" }}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <!-- / Type Filter -->
+    {{/if}}  
+    
+    {{#if (config filters-one.sizes) }}
+        <!-- Sizes Filter -->
+        <div class="py-4 widget-filter border-top">
+            <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-sizes" role="button" aria-expanded="true"
+                aria-controls="filter-sizes">
+                Sizes
+            </a>
+            <div id="filter-sizes" class="collapse show">
+                <div class="filter-options mt-3">
+                    {{#each filters-one.sizes }}
+                        {{> filters/filter-checkbox-two this type="sizes" }}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <!-- / Sizes Filter -->
+    {{/if}}    
+    
+    {{#if (config filters-one.colours) }}
+        <!-- Colour Filter -->
+        <div class="py-4 widget-filter border-top">
+            <a class="small text-body text-decoration-none text-secondary-hover transition-all transition-all fs-6 fw-bolder d-block collapse-icon-chevron"
+                data-bs-toggle="collapse" href="#filter-colour" role="button" aria-expanded="true"
+                aria-controls="filter-colour">
+                Colour
+            </a>
+            <div id="filter-colour" class="collapse show">
+                <div class="filter-options mt-3">
+                    {{#each filters-one.colours }}
+                        {{> filters/filter-colour this type="colours" }}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+        <!-- / Colour Filter -->
+    {{/if}}        
+
+</aside>
+<!-- / Category Aside-->

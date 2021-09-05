@@ -1,0 +1,46 @@
+/* Card Reveal Animation. 
+*  Used together with Bootstrap card components to reveal content on scroll 
+*  Be sure to checkout components/cards for the card styling
+*/
+[data-aos="reveal-right"], [data-aos="reveal-left"] {  
+    &.aos-animate  {
+        .card-reveal-body, .card-reveal-img {
+            &:after {
+                opacity: 0;
+            }
+        }
+        .card-reveal-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .card-reveal-img {
+            img {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+/* Default reveal animation (reveal right)*/
+[data-aos="reveal-right"] {  
+    &.aos-animate  {
+        .card-reveal-body, .card-reveal-img {
+            &:after {
+                transform: translateX(100%);
+            }
+        }
+    }
+}
+
+
+
+/* variant reveal, reveal left */
+[data-aos="reveal-left"] {  
+    &.aos-animate  {
+        .card-reveal-body, .card-reveal-img {
+            &:after {
+                transform: translateX(-100%);
+            }
+        }
+    }
+}

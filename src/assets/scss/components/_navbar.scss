@@ -1,0 +1,144 @@
+.nav-link-sm {
+    font-size: .75rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+
+.nav-link-stripped {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+    color: $text-muted;
+    font-weight: 500;
+    margin-bottom: -1px;
+
+    &.active {
+        border-bottom: 1px solid $gray-900;
+        color: $gray-900;
+    }
+}
+
+.navbar-nav a:active, .navbar-nav a:focus {
+    background: transparent;
+}
+
+/* ensure that any button links show as white for dark navbars */
+.navbar-dark .btn-link {
+    color: $white;
+}
+
+/* handle text colours for changing backgrounds on hover.
+* So if we have a transparent background that shows as white on hover, ensure links are changed to black.
+* and vice-versa for transparent to black background */
+.navbar-dark.bg-white-hover:hover {
+    .navbar-collapse:not(.show) .nav-link, .navbar-brand, .btn-link, .navbar-collapse:not(.show) .btn-link {
+        color: $body-color;
+    }
+}
+.navbar-light.bg-dark-hover:hover {
+    .navbar-collapse:not(.show) .nav-link, .navbar-brand, .btn-link, .navbar-collapse:not(.show) .btn-link {
+        color: $white;
+    }  
+}
+
+/* adjust nav-link to better center items */
+.nav-link {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+}
+
+
+/* ensure that dropdown menus continue to show on hover when user moves cursor */
+.navbar-nav .dropdown .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    height: calc(1rem + 1px);
+    width: 100%;
+}
+
+@include media-breakpoint-up(lg) { 
+    .navbar-collapse:not(.show) {
+        display: flex !important;
+    }
+}
+
+/* handle navbar styling for smaller devices */
+@include media-breakpoint-down(lg) { 
+    /* body class to hide overflow if navbar is active */
+    .navbar-active {
+        overflow: hidden;
+    }
+
+    .navbar-collapse:not(.navbar-collapse-expand) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh !important;
+        width: 100vw !important;
+        z-index: 9999;
+        background: $gray-900;
+        margin: 0 !important;
+        opacity: 0;
+        padding: 1.25rem;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        overflow-y: scroll;
+        transition: all ease-in .3s;
+    }
+    .navbar-collapse-light {
+        background: $white !important;
+
+        .nav-link {
+            color: $body-color !important;
+        }
+    }
+    .navbar-collapse.show {
+        opacity: 1;
+    }
+    .navbar-collapse.show:not(.navbar-collapse-expand) {
+        animation: fadeInUp .3s;
+    }
+
+    .navbar-collapse .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.75rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        &:after {
+            font-size: inherit;
+        }
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-menu {
+        display: block;
+        box-shadow: none !important;
+        margin: 0 !important;
+        min-width: auto !important;
+        padding: 0 .5rem .5rem;
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item.dropdown-toggle {
+        font-weight: 500;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+/* add css transition only once page has loaded to avoid content shift */
+.nav-link, .navbar-brand {
+    transition: none;
+}
+.page-loaded .nav-link, .page-loaded .navbar-brand {
+    transition: all ease-in .15s;
+}

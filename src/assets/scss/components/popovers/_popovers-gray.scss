@@ -1,0 +1,47 @@
+/* gray popover styling */
+.popover-gray {
+    .popover-arrow {
+        margin-bottom: 1px;
+        
+        &:before, &:after {
+            border-top-color: $gray-600;
+        }
+    }
+    .popover-body {
+        background: $gray-600;
+    }
+
+    &.bs-popover-end {
+        .popover-arrow {
+            margin-bottom: 0;
+            
+            &:before, &:after {
+                border-top-color: transparent;
+                border-right-color: $gray-600;
+            }
+        }        
+    }
+
+    &.bs-popover-start {
+        .popover-arrow {
+            margin-bottom: 0;
+            
+            &:before, &:after {
+                border-top-color: transparent;
+                border-left-color: $gray-600;
+            }
+        }        
+    }
+
+    &.bs-popover-bottom {
+        .popover-arrow {
+            margin-bottom: 0;
+            margin-top: 1px;
+            
+            &:before, &:after {
+                border-top-color: transparent;
+                border-bottom-color: $gray-600;
+            }
+        }        
+    }
+}

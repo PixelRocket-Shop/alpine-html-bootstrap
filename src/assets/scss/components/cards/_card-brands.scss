@@ -1,0 +1,12 @@
+/* card brands */
+.card-brands {
+    border-top: 1px solid $border-color;
+    padding: 2rem 0;
+}
+
+.card-title-brand {
+    font-weight: bold;
+    font-size: $h1-font-size;
+    text-transform: uppercase;
+    color: $gray-100;
+}

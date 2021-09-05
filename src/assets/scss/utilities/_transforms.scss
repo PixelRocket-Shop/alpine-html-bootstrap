@@ -1,0 +1,39 @@
+/* setup base class. We use CSS vars to amend the X or Y vals */
+.translate {
+    transform: translate(var(--theme-translate-X), var(--theme-translate-Y));
+}
+
+/* Generate multiple position options. 
+*  To keep CSS tidy, we use existing position SASS var instead of creating new one. 
+*/
+@each $percentage, $value in $position-values {
+    /* handle negative X values */
+    .translate-x-n#{$percentage} {
+        --theme-translate-X: -#{$value};
+    }
+    /* handle X values */
+    .translate-x-#{$percentage} {
+        --theme-translate-X: #{$value};
+    }
+    /* handle negative Y values */
+    .translate-y-n#{$percentage} {
+        --theme-translate-Y: -#{$value};
+    }
+    /* handle Y values */
+    .translate-y-#{$percentage} {
+        --theme-translate-Y: #{$value};
+    }
+}
+
+.skew-5 {
+    transform: skewY(5deg);
+}
+.skew-n5 {
+    transform: skewY(-5deg);
+}
+.skew-10 {
+    transform: skewY(10deg);
+}
+.skew-n10 {
+    transform: skewY(-10deg);
+}

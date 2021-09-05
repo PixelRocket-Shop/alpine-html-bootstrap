@@ -1,0 +1,102 @@
+{
+    "entries": [
+        {
+            "title": "Full Zip Hoodie",
+            "brand": "The North Face",
+            "price": "1129.99",
+            "currency": "$",
+            "options": "Availble in 4 colours, 10 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-1.jpg",
+            "img-hover": "{{webRoot}}/assets/images/products/product-1b.jpg",
+            "id": "product-1",
+            "review-width": "90%",
+            "review-count":"4.7 (456)"
+        },
+        {
+            "title": "Mens Sherpa Hoodie",
+            "brand": "Timberland",
+            "price": "150.00",
+            "currency": "$",
+            "options": "Availble in 4 colours, 7 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-2.jpg",
+            "sale-price": "599.55",
+            "discount-percentage": "-25%",
+            "review-count":"4.4 (1289)",
+            "id": "product-2",
+            "review-width": "60%"
+        },
+        {
+            "title": "Womens Essentials Hoodie",
+            "brand": "Osprey",
+            "price": "1100.00",
+            "currency": "$",
+            "options": "Availble in 2 colours, 3 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-3.jpg",
+            "sale-price": "779.55",
+            "discount-percentage": "-65%",
+            "review-count":"4.7 (754)",
+            "id": "product-3",
+            "review-width": "20%"
+        },
+        {
+            "title": "Elevated Lined Hoodie",
+            "brand": "Timberland",
+            "price": "1829.99",
+            "currency": "$",
+            "options": "Availble in 4 colours, 7 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-4.jpg",
+            "id": "product-4",
+            "review-width": "70%",
+            "review-count":"4.4 (1289)"
+        },
+        {
+            "title": "Mens Slab Hoodie",
+            "brand": "Adidas Originals",
+            "price": "29.99",
+            "currency": "$",
+            "options": "Availble in 4 colours, 7 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-5.jpg",
+            "img-hover": "{{webRoot}}/assets/images/products/product-5b.jpg",
+            "id": "product-5",
+            "review-width": "84%",
+            "review-count":"4.8 (189)"
+        },
+        {
+            "title": "Blocked Striped Hoodie",
+            "brand": "Superdry",
+            "price": "1329.99",
+            "currency": "$",
+            "options": "Availble in 4 colours, 7 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-6.jpg",
+            "id": "product-6",
+            "review-width": "60%",
+            "review-count":"4.5 (1567)"
+        },
+        {
+            "title": "Womens Classic Hoodie",
+            "brand": "Adidas",
+            "price": "150.00",
+            "currency": "$",
+            "options": "Availble in 4 colours, 7 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-7.jpg",
+            "sale-price": "599.55",
+            "discount-percentage": "-13%",
+            "review-count":"4.4 (1289)",
+            "id": "product-7",
+            "review-width": "60%"
+        },
+        {
+            "title": "Mens Sherpa Hoodie",
+            "brand": "Herschel Supply Co",
+            "price": "1100.00",
+            "currency": "$",
+            "options": "Availble in 2 colours, 3 sizes",
+            "img": "{{webRoot}}/assets/images/products/product-8.jpg",
+            "sale-price": "779.55",
+            "discount-percentage": "-33%",
+            "review-count":"4.7 (754)",
+            "id": "product-8",
+            "review-width": "20%"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+//Amend default Bootstrap modal styling to display modal as drawer
+.modal-drawer {
+    padding: 0 !important;
+
+
+    .modal-header {
+        border-radius: 0 !important;
+    }
+
+    &.fade {
+        .modal-dialog {
+            transform: none !important;
+        }
+        .modal-content {
+            transition: opacity linear .2s, transform ease-in .3s !important;
+            opacity: 0;
+            transform: translateX(100%) !important;
+
+            &.modal-drawer-left {
+                transform: translateX(-100%) !important;
+            }
+        }
+
+        &.show {
+            .modal-content {
+                opacity: 1;
+                transform: translateX(0) !important;
+            }
+        }
+    }
+}
+
+.modal-title {
+    font-weight: 600;
+}
+
+.modal-header {
+    border-bottom: 0;
+    padding-bottom: 0;
+}

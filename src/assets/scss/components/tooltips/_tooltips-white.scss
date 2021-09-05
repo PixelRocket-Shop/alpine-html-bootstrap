@@ -1,0 +1,40 @@
+/* tooltip white styling */
+.tooltip-white {
+    box-shadow: $box-shadow-lg;
+    
+    .tooltip-inner {
+        background: $white;
+        color: $body-color;
+    }
+
+    .tooltip-arrow {
+        &:before {
+            border-top-color: $white;
+        }
+    }
+
+    &.bs-tooltip-end {
+        .tooltip-arrow {
+            &:before {
+                border-top-color: transparent;
+                border-right-color: $white;
+            }
+        }        
+    }
+    &.bs-tooltip-start {
+        .tooltip-arrow {
+            &:before {
+                border-top-color: transparent;
+                border-left-color: $white;
+            }
+        }        
+    }
+    &.bs-tooltip-bottom {
+        .tooltip-arrow {
+            &:before {
+                border-top-color: transparent;
+                border-bottom-color: $white;
+            }
+        }        
+    }        
+}

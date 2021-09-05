@@ -1,0 +1,6 @@
+/* Faded Alert */
+@each $color, $value in $theme-colors {
+    .alert-#{$color}-faded {
+        @include alert-variant-faded(rgba($value, $alert-faded-bg-opacity), $value);
+    }
+}

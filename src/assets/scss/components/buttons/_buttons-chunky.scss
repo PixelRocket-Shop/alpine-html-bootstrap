@@ -1,0 +1,7 @@
+/* chunky buttons */
+@each $color,
+$value in $theme-colors {
+    .btn-#{$color}-chunky {
+        @include btn-chunky($value)
+    }
+}

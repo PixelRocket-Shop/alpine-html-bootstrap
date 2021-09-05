@@ -1,0 +1,35 @@
+/* Accordion Stripped Styling */
+.accordion-button-stripped:after {
+    right: 0;
+}
+
+.accordion-button-stripped:not(.collapsed)::after {
+    color: $body-color;
+    content: "\EA56";
+    transform: none !important;
+}
+
+.accordion-button-stripped,
+.accordion-button-stripped:not(.collapsed) {
+    background: transparent;
+    border-radius: 0 !important;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+.accordion-stripped {
+    border-bottom: 1px solid $border-color;
+}
+
+.accordion-button-stripped:not(.collapsed) {
+    color: $body-color;
+}
+
+.accordion-stripped:first-of-type {
+    border-top: 1px solid $border-color;
+}
+
+.accordion-body-stripped {
+    padding-left: 0;
+    padding-right: 0;
+}

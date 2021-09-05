@@ -1,0 +1,27 @@
+/* Nav tabs border bottom */
+.nav-tabs-border {
+    .nav-link {
+      position: relative;
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 2rem;
+  
+      &:after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: $dark;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+      }
+  
+      &.active {
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+  }

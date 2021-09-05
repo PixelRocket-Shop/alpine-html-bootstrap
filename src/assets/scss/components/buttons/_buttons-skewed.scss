@@ -1,0 +1,21 @@
+/* skew button left & right. Only applied for breakpoint MD and above because stacked skewed buttons do not look good. */
+@include media-breakpoint-up(md) {
+    .btn-skew-left {
+        transform: skew(10deg);
+    }
+
+    .btn-skew-left span {
+        display: block;
+        transform: skew(-10deg);
+    }
+
+    .btn-skew-right {
+        transform: skew(-10deg);
+    }
+
+
+    .btn-skew-right span {
+        display: block;
+        transform: skew(10deg);
+    }
+}

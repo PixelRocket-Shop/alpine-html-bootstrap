@@ -1,0 +1,39 @@
+{
+    "entries": [{
+            "img": "{{webRoot}}/assets/images/logos/logo-1.svg",
+            "name": "Katmandu"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-2.svg",
+            "name": "Billabong"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-3.svg",
+            "name": "Timberland"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-4.svg",
+            "name": "Patagonia"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-5.svg",
+            "name": "The North Face"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-6.svg",
+            "name": "Champion"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-7.svg",
+            "name": "Salomon"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-8.svg",
+            "name": "Burton"
+        },
+        {
+            "img": "{{webRoot}}/assets/images/logos/logo-9.svg",
+            "name": "Oakley"
+        }
+    ]
+}

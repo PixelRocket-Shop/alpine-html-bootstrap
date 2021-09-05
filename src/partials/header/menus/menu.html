@@ -1,0 +1,73 @@
+<ul class="navbar-nav py-lg-2 mx-auto">
+    <li class="nav-item me-lg-4 dropdown position-static">
+        <a class="nav-link fw-bolder dropdown-toggle py-lg-4" href="#" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Menswear
+        </a>
+        <!-- Menswear dropdown menu-->
+        <div class="dropdown-menu dropdown-megamenu">
+            <div class="container">
+                <div class="row g-0">
+                    <!-- Dropdown Menu Links Section-->
+                    <div class="col-12 col-lg-7">
+                        {{> menus/dropdown-links }}
+                    </div>
+                    <!-- /Dropdown Menu Links Section-->
+
+                    <!-- Dropdown Menu Images Section-->
+                    <div class="d-none d-lg-block col-lg-5">
+                        <div class="vw-50 h-100 bg-img-cover bg-pos-center-center position-absolute" style="background-image: url({{webRoot}}/assets/images/banners/banner-2.jpg);"></div>
+                    </div>
+                    <!-- Dropdown Menu Images Section-->
+                </div>
+            </div>
+        </div>
+        <!-- / Menswear dropdown menu-->
+    </li>
+    <li class="nav-item me-lg-4 dropdown position-static">
+        <a class="nav-link fw-bolder dropdown-toggle py-lg-4" href="#" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Womenswear
+        </a>
+        <!-- Womenswear dropdown menu-->
+        <div class="dropdown-menu dropdown-megamenu">
+            <div class="container">
+                <div class="row g-0">
+                    <!-- Dropdown Menu Links Section-->
+                    <div class="col-12 col-lg-7">
+                        {{> menus/dropdown-links }}
+                    </div>
+                    <!-- /Dropdown Menu Links Section-->
+
+                    <!-- Dropdown Menu Images Section-->
+                    <div class="d-none d-lg-block col-lg-5">
+                        <div class="vw-50 h-100 bg-img-cover bg-pos-center-center position-absolute" style="background-image: url({{webRoot}}/assets/images/banners/banner-4.jpg);"></div>
+                    </div>
+                    <!-- Dropdown Menu Images Section-->
+                </div>
+            </div>
+        </div>
+        <!-- / Womenswear dropdown menu-->
+    </li>
+    <li class="nav-item me-lg-4">
+        <a class="nav-link fw-bolder py-lg-4" href="#">
+            Kidswear
+        </a>
+    </li>
+    <li class="nav-item me-lg-4">
+        <a class="nav-link fw-bolder py-lg-4" href="#">
+            Sale Items
+        </a>
+    </li>
+    <li class="nav-item dropdown me-lg-4">
+        <a class="nav-link fw-bolder dropdown-toggle py-lg-4" href="#" role="button" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Demo Pages
+        </a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{webRoot}}/index.html">Homepage</a></li>
+            <li><a class="dropdown-item" href="{{webRoot}}/category.html">Category</a></li>
+            <li><a class="dropdown-item" href="{{webRoot}}/product.html">Product</a></li>
+          </ul>
+    </li>
+</ul>

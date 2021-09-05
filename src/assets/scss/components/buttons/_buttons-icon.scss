@@ -1,0 +1,21 @@
+/* icon buttons */
+.btn-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: 100%;
+
+    &.btn-lg {
+        width: 80px;
+        height: 80px;
+    }
+
+    &.btn-sm {
+        width: 36px;
+        height: 36px;
+    }
+}

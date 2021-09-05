@@ -1,0 +1,11 @@
+/* rounded top left, bottom right */
+.btn-rounded-tl-br {
+    border-top-left-radius: $border-radius-xl;
+    border-bottom-right-radius: $border-radius-xl;
+}
+
+/* rounded top right, bottom left */
+.btn-rounded-tr-bl {
+    border-top-right-radius: $border-radius-xl;
+    border-bottom-left-radius: $border-radius-xl;
+}

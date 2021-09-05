@@ -1,0 +1,48 @@
+/* dark popover styling */
+.popover-dark {
+    .popover-arrow {
+        margin-bottom: 1px;
+        
+        &:before, &:after {
+            border-top-color: $gray-900;
+        }
+    }
+    .popover-body {
+        background: $gray-900;
+        color: $white;
+    }
+
+    &.bs-popover-end {
+        .popover-arrow {
+            margin-bottom: 0;
+            
+            &:before, &:after {
+                border-top-color: transparent;
+                border-right-color: $gray-900;
+            }
+        }        
+    }
+
+    &.bs-popover-start {
+        .popover-arrow {
+            margin-bottom: 0;
+            
+            &:before, &:after {
+                border-top-color: transparent;
+                border-left-color: $gray-900;
+            }
+        }        
+    }
+
+    &.bs-popover-bottom {
+        .popover-arrow {
+            margin-bottom: 0;
+            margin-top: 1px;
+            
+            &:before, &:after {
+                border-top-color: transparent;
+                border-bottom-color: $gray-900;
+            }
+        }        
+    }
+}

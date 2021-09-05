@@ -1,0 +1,19 @@
+/* Accordion Icon position left styling */
+.accordion-icon-left.accordion-button {
+    padding-left: 2.5rem; 
+
+    &:after {
+        right: auto;
+        left: .5rem;
+    }
+
+    &.accordion-button-stripped {
+        &:after {
+            left: 0;
+        }
+    }
+}
+
+.accordion-icon-left.accordion-body {
+    padding-left: 2.5rem; 
+}

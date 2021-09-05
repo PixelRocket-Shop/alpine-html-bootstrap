@@ -1,0 +1,14 @@
+/* brand buttons */
+.btn-brand-letter {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: $h1-font-size;
+    padding: .25rem 0rem;
+    margin-right: 1.5rem;
+    transition: all linear .2s;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: .50;
+    }
+}

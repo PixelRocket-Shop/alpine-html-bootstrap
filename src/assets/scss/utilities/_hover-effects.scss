@@ -1,0 +1,93 @@
+[class*='hover-'] {
+    will-change: transform, opacity, box-shadow;
+}
+
+.hover-lift {
+    transition: all ease-in .15s;
+    &:hover {
+        transform: translate3d(0px, -5px, 0px);
+    }
+}
+
+
+.hover-lift-sm {
+    transition: all ease-in .15s;
+    &:hover {
+        transform: translate3d(0px, -2px, 0px);
+    }
+}
+
+.hover-opacity-75 {
+    transition: all ease-in .15s;
+    &:hover {
+        opacity: .75;
+    }
+}
+
+.hover-boxshadow {
+    transition: all ease-in .15s;
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
+.hover-target-show {
+    opacity: 0;
+    transition: all ease-in .1s;
+}
+
+.hover-target-hide {
+    opacity: 1;
+    transition: all ease-in .1s;  
+}
+
+.hover-show {
+    opacity: 0;
+}
+
+
+.hover-trigger {
+
+    &:hover {
+        z-index: 20;
+
+        .hover-target-show {
+            opacity: 1;
+            transition: all ease-in .3s;
+        }
+        .hover-target-hide {
+            opacity: 0;
+        }
+        .hover-show {
+            opacity: 1;
+        }
+
+    }
+}
+
+.hover-pseudo-bg {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        background: $white;
+        box-shadow: $box-shadow-lg;
+        border-radius: $border-radius;
+        width: 100%;
+        min-height: 100%;
+        height: var(--theme-listing-page-card-pseudo-hover-height);
+        transform: scale3d(1.1, 1.1, 1.1);
+        position: absolute;
+        z-index: -1;
+        transition: all ease-in .3s;
+        opacity: 0;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+}
+

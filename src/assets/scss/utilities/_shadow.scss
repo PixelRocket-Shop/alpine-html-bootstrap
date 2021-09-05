@@ -1,0 +1,6 @@
+//coloured shadows
+@each $color, $value in $theme-colors {
+    .shadow-#{$color} {
+      @include colored-shadow($value)
+    }
+  }

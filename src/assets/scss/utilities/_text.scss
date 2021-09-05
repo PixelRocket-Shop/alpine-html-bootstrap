@@ -1,0 +1,51 @@
+// Adjust display- font size for smaller screens
+@each $display, $font-size in $display-font-sizes-sm {
+  @include media-breakpoint-down(md) {
+    .display-md-#{$display} {
+      @include font-size($font-size);
+      font-weight: $display-font-weight;
+      line-height: $display-line-height;
+    }
+  }
+}
+
+// XS font size
+.fs-xs {
+  font-size: 11px !important;
+}
+
+
+/* text link cover full area. Used mostly with cards */
+.link-cover {
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    pointer-events: auto;
+    content: "";
+  }
+}
+
+.text-link-border {
+  text-decoration: none;
+  border-bottom: 1px solid $body-color;
+  border-radius: 0;
+  transition: all linear .2s;
+
+  &:hover,
+  &:focus,
+  &:active {
+      border-color: transparent;
+  }
+}
+
+.title-small {
+  letter-spacing: .20em;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 500;
+  display: block;
+}

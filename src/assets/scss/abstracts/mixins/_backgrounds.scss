@@ -1,0 +1,4 @@
+/* Mixin background faded */
+@mixin bg-variant-faded($bg) {
+    background-color: $bg !important;
+  }

@@ -1,0 +1,21 @@
+{
+    "entries": [
+        {
+            "label-bottom": "Small",
+            "value": "small"
+        },
+        {
+            "label-bottom": "Medium",
+            "value": "medium",
+            "disabled": true
+        },
+        {
+            "label-bottom": "Large",
+            "value": "large"
+        },
+        {
+            "label-bottom": "Extra Large",
+            "value": "extralarge"
+        }
+    ]
+}

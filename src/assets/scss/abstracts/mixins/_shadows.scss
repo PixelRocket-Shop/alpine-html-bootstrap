@@ -1,0 +1,4 @@
+/* Mixin coloured shadow */
+@mixin colored-shadow($value) {
+    box-shadow: -1px 1px 13px -6px rgba($value, 0.85);
+}

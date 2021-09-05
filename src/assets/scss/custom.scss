@@ -1,0 +1,15 @@
+/* Custom styling that only applies to demo logo. Remove when you replace your with your logo */
+.svg-logo-white {
+    color: $orange;
+}
+.svg-logo-black {
+    color: $gray-900;
+}
+
+.navbar-transparent {
+    .svg-logo-black {
+        color: $white;
+    }   
+}
+
+/* Add your own custom CSS here... */

@@ -1,0 +1,91 @@
+.hotspot-container {
+    position: relative;
+
+    .hotspot {
+        position: absolute;
+        z-index: 20;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: rgba(0,0,0,0.4);
+        border: 2px solid rgba(255,255,255, .7);
+        box-shadow: $box-shadow-lg;
+        transition: all ease-in-out 0.2s;
+        opacity: 0;
+        cursor: pointer;
+
+        &:after {
+            width: 12px;
+            height: 12px;
+            background: $white;
+            border-radius: 100%;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -6px;
+            margin-top: -6px;
+            box-shadow: $box-shadow;
+            transition: all linear 0.3s;
+        }
+
+        &:before {
+            width: 46px;
+            height: 46px;
+            border-radius: 100%;
+            content: "";
+            display: block;
+            position: absolute;
+            left: -7px;
+            top: -7px;
+            border: 2px solid rgba(255,255,255, .9);     
+            opacity:0;
+            animation: pulsate 3s ease-out 3;       
+        }
+
+        &.always-show {
+            opacity: 1;
+        }
+
+        &.always-animate {
+
+            &:before {
+                animation: pulsate 3s ease-out infinite;  
+            }
+        }
+
+        &:hover, &:active, &:focus {
+
+            border: 2px solid transparent;
+
+            &:after {
+                transform: scale(.8);
+            }
+
+        }
+    }
+
+    &:hover {
+        .hotspot {
+            opacity: 1;
+        }
+    }
+}
+
+
+.hotspot-content {
+    z-index: 30;
+    transition: all ease-in-out 0.3s;
+    opacity: 0;
+    background: $white;
+
+    &.show {
+        opacity: 1;
+    }
+}
+
+
+.tippy-content {
+    padding: .5rem !important;
+}

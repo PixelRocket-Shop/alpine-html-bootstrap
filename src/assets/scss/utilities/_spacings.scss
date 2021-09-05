@@ -1,0 +1,8 @@
+/* add top margin to every odd nth of type*/
+.odd-child-mt-5:nth-of-type(odd) {
+    margin-top: calc(#{$spacer} * 5);
+}
+/* add top margin to every even nth of type*/
+.even-child-mt-5:nth-of-type(even) {
+    margin-top: calc(#{$spacer} * 5);
+}

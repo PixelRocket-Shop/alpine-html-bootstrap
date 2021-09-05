@@ -1,0 +1,32 @@
+/* adjust btn-sm padding */
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: .5rem .75rem !important;
+}
+
+/* remove text decoration for btn-link */
+.btn-link {
+    text-decoration: none;
+}
+
+/* set btn-orange and btn-success colour to white */
+.btn-orange, .btn-success {
+    color: $white;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+/* set outline button border-size to 2px*/
+[class*="btn-outline-"] {
+    border-width: 2px;
+}
+
+/* add css transition only once page has loaded to avoid content shift */
+.btn {
+    transition: none;
+}
+.page-loaded .btn {
+    transition: all ease-in .15s;
+}

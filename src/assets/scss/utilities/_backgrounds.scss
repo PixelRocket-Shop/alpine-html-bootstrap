@@ -1,0 +1,72 @@
+/* image background control */
+.bg-img-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img-contain {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bg-pos-center-center {
+    background-position: center center;
+}
+
+.bg-pos-center-top {
+    background-position: center top;
+}
+
+.bg-pos-center-bottom {
+    background-position: center bottom;
+}
+
+.bg-pos-left-top {
+    background-position: left top;
+}
+
+.bg-pos-left-center {
+    background-position: left center;
+}
+
+.bg-pos-right-center {
+    background-position: right center;
+}
+
+.bg-pos-right-top {
+    background-position: right top;
+}
+
+.bg-pos-center-bottom {
+    background-position: center bottom;
+}
+
+.bg-pos-left-bottom {
+    background-position: left bottom;
+}
+
+.bg-pos-right-bottom {
+    background-position: right bottom;
+}
+
+.bg-white-hover:hover {
+    background: $white !important;
+}
+
+
+// faded background
+@each $color, $value in $theme-colors {
+    .bg-#{$color}-faded {
+      @include bg-variant-faded(rgba($value, $btn-faded-bg-opacity));
+    }
+}
+
+/* single custom colours */
+.bg-teal-300 {
+    background: $teal-300;
+}
+.bg-black-opacity {
+    background: rgba(0,0,0, .2);
+}
+.bg-gray-800 {
+    background: $gray-800 !important;
+}

@@ -1,0 +1,29 @@
+/* Breadcrumbs */
+.breadcrumb-item {
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    color: $text-muted;
+
+    a {
+        text-decoration: none;
+        color: $text-muted;
+    }
+}
+
+/* Breadcrumbs light */
+.breadcrumb-light {
+    color: $white;
+
+    a {
+        color: $white;
+    }
+
+    &.active {
+        color: $white;
+    }
+}
+
+.breadcrumb-light+.breadcrumb-item::before {
+    color: $white;
+}
