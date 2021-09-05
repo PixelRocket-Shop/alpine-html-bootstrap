@@ -5,7 +5,7 @@ For the fashion focused online store, Alpine is a responsive Bootstrap 5 Ecommer
 
 <strong><a href="https://alpine-html-bootstrap.vercel.app/">View Demo</a> | <a href="https://github.com/PixelRocket-Shop/alpine-html-bootstrap/archive/main.zip">Download ZIP</a></strong>
 
-![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/alpine-html/homepage-medium.png "Alpine | Responsive Bootstrap 5 Ecommerce Template")
+![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/alpine-html/homepage-medium.jpg "Alpine | Responsive Bootstrap 5 Ecommerce Template")
 
 ## Table of contents
 
