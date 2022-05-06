@@ -40,7 +40,7 @@ Most developers will be editing the source code and will also be running Webpack
 
 
 ## Template Pages
-The template consists of 3 pages:
+The template consists of 5 pages:
 
 * Homepage
 * Category page
