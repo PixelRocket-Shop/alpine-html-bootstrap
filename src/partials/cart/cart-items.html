@@ -1,0 +1,52 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th class="d-none d-sm-table-cell"></th>
+            <th class="ps-sm-3">Details</th>
+            <th>Qty</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each cart-items.entries }}
+            <tr>
+                <!-- image -->
+                    <td class="d-none d-sm-table-cell">
+                        <picture class="d-block bg-light p-3 f-w-20">
+                            <img class="img-fluid" src="{{ img }}" alt="{{config.defaultImgAlt}}">
+                        </picture>
+                    </td>
+                <!-- image -->
+                
+                <!-- Details -->
+                    <td>
+                        <div class="ps-sm-3">
+                            <h6 class="mb-2 fw-bolder">
+                                {{ title }}
+                            </h6>
+                            <small class="d-block text-muted">{{ options }}</small>
+                        </div>
+                    </td>
+                <!-- Details -->
+                
+                <!-- Qty -->
+                    <td>
+                        <div class="px-3">
+                            <span class="small text-muted mt-1">{{ qty }} @ {{ currency }}{{ price }}</span>
+                        </div>
+                    </td>
+                <!-- /Qty -->
+
+                <!-- Actions -->
+                    <td class="f-h-0">
+                        <div class="d-flex justify-content-between flex-column align-items-end h-100">
+                            <i class="ri-close-circle-line ri-lg"></i>
+                            <p class="fw-bolder mt-3 m-sm-0">{{ currency }}{{ line-total }}</p>
+                        </div>
+                    </td>
+                <!-- /Actions -->
+
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

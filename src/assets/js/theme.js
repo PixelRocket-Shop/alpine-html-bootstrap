@@ -4,6 +4,7 @@ import 'bootstrap';
 // Framework import.
 import './components/aos';
 import './components/choices';
+import './components/checkout';
 import './components/hotspots';
 import './components/image-zoom';
 import './components/navbar';

@@ -64,6 +64,18 @@ $utilities: map-merge(
         )
       )
     ),
+    /* Amend top position util */
+    "top": map-merge(
+        map-get($utilities, "top"),
+        (
+            values: map-merge(
+                map-get(map-get($utilities, "top"), "values"), (
+                    5: 5%,
+                    10: 10%
+                ) 
+            )
+        )
+    ),    
     /* Amend width util */
     "width": map-merge(
       map-get($utilities, "width"),
@@ -180,7 +192,7 @@ $utilities: map-merge(
         "40": 40,
         "50": 50
       )
-    ),
+    ),   
     /* Amend viewport height to include additional sizes*/
     "viewport-height": map-merge(
       map-get($utilities, "viewport-height"),

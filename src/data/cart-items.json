@@ -1,0 +1,31 @@
+{
+    "entries": [
+        {
+            "title": "Mens StormBreaker Jacket",
+            "price": "1129.99",
+            "line-total": "1129.99",
+            "qty": "1",
+            "currency": "$",
+            "options": "Mens / Blue / Medium",
+            "img": "{{webRoot}}/assets/images/products/product-1.jpg"
+        },
+        {
+            "title": "North Face Jacket",
+            "price": "499.99",
+            "line-total": "999.98",
+            "qty": "2",
+            "currency": "$",
+            "options": "Mens / Blue / Large",
+            "img": "{{webRoot}}/assets/images/products/product-2.jpg"
+        },
+        {
+            "title": "Womens Adidas Hoodie",
+            "price": "59.99",
+            "line-total": "59.99",
+            "qty": "1",
+            "currency": "$",
+            "options": "Womens / Red / Medium",
+            "img": "{{webRoot}}/assets/images/products/product-4.jpg"
+        }            
+    ]
+}

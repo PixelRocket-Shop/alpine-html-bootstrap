@@ -1,0 +1,7 @@
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: $border-color;
+}
+.table th {
+    text-transform: uppercase;
+    font-size: $small-font-size;
+}

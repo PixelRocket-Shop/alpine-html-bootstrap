@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Head -->
+{{> (config config.partials.head) title=config.defaultPageTitle }}
+
+<body class="{{ config.classes.body }}">
+
+    <!-- Navbar -->
+    {{> (config config.partials.navbar) 
+        configClassList=config.classes.navbar
+        classList="" }}
+    <!-- / Navbar-->
+
+    <!-- Main Section-->
+    <section class="mt-5 container {{ config.classes.content }}">
+        <!-- Page Content Goes Here -->
+
+        <h1 class="mb-4 display-5 fw-bold text-center">Checkout Securely</h1>
+        <p class="text-center mx-auto">Please fill in the details below to complete your order. Already registered?
+            <a href="#">Login here.</a></p>
+
+            <div class="row g-md-8 mt-4">
+                <!-- Checkout Panel Left -->
+                <div class="col-12 col-lg-6 col-xl-7">
+                    {{> checkout/checkout-contact }}
+                    {{> checkout/checkout-shipping }}
+                    {{> checkout/checkout-billing }}
+                    {{> checkout/checkout-shipping-method }}
+                    {{> checkout/checkout-payment }}
+                </div>
+                <!-- / Checkout Panel Left -->
+
+                <!-- Checkout Panel Summary -->
+                <div class="col-12 col-lg-6 col-xl-5">
+                    {{> checkout/checkout-summary }}
+                </div>
+                <!-- /Checkout Panel Summary -->
+            </div>
+
+        <!-- /Page Content -->
+    </section>
+    <!-- / Main Section-->
+
+    <!-- Footer -->
+    {{> (config config.partials.footer) 
+            configClassList=config.classes.footer 
+            classList="" 
+        }}
+
+    <!-- Offcanvas Imports-->
+    {{> offcanvas/offcanvas }}
+
+    <!-- Search Overlay-->
+    {{> search/search-overlay }}    
+
+    <!-- Theme JS -->
+    {{> footer/scripts }}
+
+</body>
+
+</html>

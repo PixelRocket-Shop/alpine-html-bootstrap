@@ -45,6 +45,8 @@ The template consists of 3 pages:
 * Homepage
 * Category page
 * Product page
+* Cart page
+* Checkout page
 
 To keep code repetition to a minimum, we've used Handlebars.js as the templating engine and partials to quickly add the same code to different pages. We also use a Handlebars plugin for JSON data - this allows us to use loops and output a single HTML code block instead of repeating the same HTML.
 
