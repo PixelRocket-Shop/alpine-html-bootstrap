@@ -1,4 +1,6 @@
-// Import Bootstrap Utils so that we can amend them
+// Import Bootstrap variables, maps and utilities so that we can amend them
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/maps';
 @import '~bootstrap/scss/utilities';
 
 $utilities: map-merge(

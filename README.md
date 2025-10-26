@@ -7,6 +7,16 @@ For the fashion focused online store, Alpine is a responsive Bootstrap 5 Ecommer
 
 ![Bootstrap 5 Responsive HTML Fashion Store Template](https://pixelrocket-public-assets.s3.eu-west-2.amazonaws.com/github-assets/alpine-html/homepage-medium.jpg "Alpine | Responsive Bootstrap 5 Ecommerce Template")
 
+## More Free HTML Templates
+
+| Template | Technology | Preview |
+|----------|-----------|---------|
+| [Alpine](https://pixelrocket.store/free-templates/html-templates/alpine-html-bootstrap-ecommerce-template) | Bootstrap 5 | [![Alpine Preview](https://pixrocket-vapor-public.s3.amazonaws.com/133/01J4TV970VQMEQCWVP6HBDFAKR.webp)](https://pixelrocket.store/free-templates/html-templates/alpine-html-bootstrap-ecommerce-template) |
+| [OldSkool](https://pixelrocket.store/free-templates/html-templates/oldskool-html-bootstrap-ecommerce-template) | Bootstrap 5 | [![OldSkool Preview](https://pixrocket-vapor-public.s3.amazonaws.com/134/01J4TV99X2W9AZWPXSDQTG0RCZ.webp)](https://pixelrocket.store/free-templates/html-templates/oldskool-html-bootstrap-ecommerce-template) |
+| [Apollo](https://pixelrocket.store/free-templates/html-templates/apollo-html-bootstrap-admin-panel) | Bootstrap | [![Apollo Preview](https://pixrocket-vapor-public.s3.amazonaws.com/135/01J4TV9D2RZYZ5X27Z7XJ6V71H.webp)](https://pixelrocket.store/free-templates/html-templates/apollo-html-bootstrap-admin-panel) |
+| [Muse](https://pixelrocket.store/free-templates/html-templates/muse-html-bootstrap-single-page-portfolio) | Bootstrap | [![Muse Preview](https://pixrocket-vapor-public.s3.amazonaws.com/136/01J4TV9FZR9ZQQJFWBVCYXQJ2M.webp)](https://pixelrocket.store/free-templates/html-templates/muse-html-bootstrap-single-page-portfolio) |
+| [Sigma](https://pixelrocket.store/free-templates/html-templates) | Bootstrap | [![Sigma Preview](https://pixrocket-vapor-public.s3.amazonaws.com/137/01J4TV9K2V836HS8PCM1NEZHEB.webp)](https://pixelrocket.store/free-templates/html-templates) |
+
 ## Table of contents
 
 - [Requirements](#requirements)

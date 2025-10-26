@@ -1,4 +1,5 @@
-import Swiper, {
+import Swiper from 'swiper';
+import {
   Navigation,
   Pagination,
   Scrollbar,
@@ -6,13 +7,10 @@ import Swiper, {
   Mousewheel,
   Keyboard,
   Parallax,
-  Lazy,
   EffectFade,
   Thumbs,
   Controller,
-} from 'swiper';
-
-Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, Parallax, Lazy, EffectFade, Thumbs, Controller]);
+} from 'swiper/modules';
 
 (function () {
   document.addEventListener('DOMContentLoaded', () => {
@@ -20,6 +18,7 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
 
     swipers.forEach((elem) => {
       let options = elem.dataset && elem.dataset.options ? JSON.parse(elem.dataset.options) : {};
+      options.modules = [Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, Parallax, EffectFade, Thumbs, Controller];
       var swiper = new Swiper(elem, options);
     });
 
@@ -30,6 +29,7 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
       const breakpoint = window.matchMedia(`(max-width: ${cssVariableBreakpointLG})`);
       const swiperWrapper = document.querySelector('.swiper-wrap');
       const options = {
+        modules: [Navigation, Pagination, EffectFade],
         slidesPerView: 1,
         loop: true,
         autoHeight: true,
@@ -90,6 +90,7 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
 
   // Custom product page slideshow - horizontal swiper
   var galleryThumbs = new Swiper('.gallery-thumbs-horizontal', {
+    modules: [Thumbs],
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
@@ -97,12 +98,9 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
     watchSlidesProgress: true,
   });
   var galleryTop = new Swiper('.gallery-top-horizontal', {
+    modules: [Thumbs],
     spaceBetween: 0,
     loop: true,
-    navigation: {
-      nextEl: '.swiper-next',
-      prevEl: '.swiper-prev',
-    },
     thumbs: {
       swiper: galleryThumbs
     }
@@ -110,13 +108,16 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
 
   // Custom product page slideshow - vertical swiper
   var galleryThumbs = new Swiper('.gallery-thumbs-vertical', {
+    modules: [Thumbs],
     spaceBetween: 5,
     slidesPerView: 'auto',
     direction: 'vertical'
   });
   var galleryTop = new Swiper('.gallery-top-vertical', {
+    modules: [EffectFade, Thumbs],
     spaceBetween: 0,
     effect: 'fade',
+    navigation: false,
     thumbs: {
       swiper: galleryThumbs
     }
@@ -124,6 +125,7 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
 
     // Custom Linked Product Carousel - Large
     var linkedCarouselLarge = new Swiper('.swiper-linked-carousel-large', {
+      modules: [Controller],
       spaceBetween: 0,
       slidesPerView: 1,
       roundLengths: true,
@@ -134,6 +136,7 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
     });
     // Custom Linked Product Carousel - Small
     var linkedCarouselSmall = new Swiper('.swiper-linked-carousel-small', {
+      modules: [Navigation, Pagination, Controller],
       spaceBetween: 0,
       slidesPerView: 1,
       roundLengths: true,
@@ -149,9 +152,10 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
         control: linkedCarouselLarge
       }
     });
-    
+
     // Custom Linked Product Lookbook Carousel
     var linkedLookbookProducts = new Swiper('.swiper-linked-lookbook', {
+      modules: [Controller],
       spaceBetween: 0,
       slidesPerView: 1,
       roundLengths: true,
@@ -159,10 +163,12 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
     });
   // Custom lookbook swiper
   var lookbookThumbs = new Swiper('.lookbook-thumbs-horizontal', {
+    modules: [Thumbs],
     spaceBetween: 5,
     slidesPerView: "auto",
   });
   var lookbookImgs = new Swiper('.lookbook-top-horizontal', {
+    modules: [Navigation, Pagination, Thumbs, Controller],
     spaceBetween: 0,
     pagination: {
       el: '.swiper-pagination-lookbook',
@@ -178,7 +184,7 @@ Swiper.use([Navigation, Pagination, Scrollbar, Autoplay, Mousewheel, Keyboard, P
     controller: {
       control: linkedLookbookProducts
     }
-  });    
+  });
 
 
 
